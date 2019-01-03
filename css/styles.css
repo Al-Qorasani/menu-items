@@ -1,0 +1,314 @@
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(0 99 81);
+    font-family: 'Oxygen', sans-serif;
+}
+
+#header-nav {
+    background-color: white;
+    border-radius: 0;
+    border: 0;
+}
+
+#logo-img {
+    background: url('../images/logo_204x50.png') no-repeat;
+    width: 204px;
+    height: 50px;
+    margin: 10px 15px 10px 0;
+}
+
+.navbar-brand {
+    padding: 25px;
+}
+
+.navbar-brand h1 {
+    font-family: 'Lora', serif;
+    color: #557c3e;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+
+#brand-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a, span {
+    margin: 10px;
+}
+
+#nav-list {
+    margin-top: 10px;
+}
+
+#nav-list a {
+    color: rgb(0 99 81);
+    text-align: center;
+}
+
+#nav-list a:hover {
+    background: #E7E7E7;
+}
+
+#nav-list a span {
+    font-size: 1.8em;
+}
+
+#phone { /* okay, that's how we see it */
+    margin-top: 10px;
+    text-align: right;
+    padding-bottom: 0;
+}
+
+.navbar button.navbar-toggler, .nav .navbar-toggler-icon {
+    border: 1px solid rgb(0 99 81);
+}
+
+.navbar button.navbar-toggler {
+    clear: both;
+}
+/* END HEADER*/
+
+/* FOOTER */
+.panel-footer {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #222;
+    border-top: 0;
+}
+
+.panel-footer div.row {
+    margin-bottom: 35px;
+}
+
+#hours, #address {
+    line-height: 2;
+}
+
+#hours > span, #address > span {
+    font-size: 1.3em;
+}
+
+#address p {
+    color: #557c3e;
+    font-size: .8em;
+    line-height: 1.8;
+}
+
+#testimonials {
+    font-style: italic;
+}
+
+#testimonials p:nth-child(2) {
+    margin-top: 25px;
+}
+
+/* HOME PAGE */
+.jumbotron {
+    box-shadow: 0 0 50px black;
+    border-bottom: : 2px solid black;
+    border-top: : 2px solid black;
+    background-position: center;
+}
+
+#menu-tile, #specials-tile, #map-tile {
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+    box-shadow: 0 1px 5px 1px #CCCCCC;
+}
+
+#menu-tile {
+    background: url('../images/A380_1024x768.jpg') no-repeat;
+    background-position: center;
+}
+
+#specials-tile {
+    background: url('../images/B737_1920x1080.jpg') no-repeat;
+    background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+    margin: 0;
+}
+
+.category-tile {
+    position: relative;
+    border: 2px solid black;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
+}
+
+.category-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+    margin: 0;
+}
+
+.category-tile:hover {
+    box-shadow: 0 1px 5px 1px white;
+}
+
+#menu-categories-title + div {
+    margin-bottom: 50px;
+}
+/* END MENU CATEGORIES PAGE */
+
+/* SINGLE CATEGORY PAGE */
+.menu-item-tile {
+  margin-bottom: 25px;
+}
+.menu-item-tile hr {
+  width: 80%;
+}
+.menu-item-tile .menu-item-price {
+  font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+.menu-item-tile .menu-item-price span {
+  font-size: .6em;
+}
+.menu-item-photo {
+  position: relative;
+  border: 2px solid #3F0C1F; 
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+.menu-item-photo div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: #557c3e;
+  text-align: center;
+}
+.menu-item-description {
+  padding-right: 30px;
+}
+h3.menu-item-title {
+  margin: 0 0 10px;
+}
+.menu-item-details {
+  font-size: .9em;
+  font-style: italic;
+}
+/* END SINGLE CATEGORY PAGE */
+
+/***** large devices *****/
+@media (min-width: 1200px) {
+    .jumbotron {
+        background: url('../images/A350_3606x2407.jpg') no-repeat;
+        height: 675px;
+        background-position: center;
+    }
+}
+
+/***** medium devices *****/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .jumbotron {
+        background: url('../images/A350_1151x768.jpg') no-repeat;
+        height: 558px;
+    }
+    #phone{
+        font-size: 0.8em;
+    }
+    #brand-name {
+        font-size: 0.8em;
+    }
+    .nav {
+        font-size: 0.8em;
+    }
+}
+
+/***** small devices *****/
+@media (min-width: 768px) and (max-width: 991px) {
+    #phone {
+        display: none;
+    }
+    .jumbotron {
+        background: url('../images/A350_991x661.jpg') no-repeat;
+        height: 430px;
+    }
+}
+
+/***** extra-small devices *****/
+@media (max-width: 767px) {
+    #navbarSupportedContent a {
+        font-size: 1.2em;
+    }
+    #navbarSupportedContent a span {
+        font-size: 1em;
+    }
+    .jumbotron {
+        margin-top: 30px;
+        padding: 0;
+    }
+    /* FOOTER */
+    .panel-footer section {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .panel-footer section:nth-child(3) {
+        margin-bottom: 0;
+    }
+    .panel-footer section hr {
+        width: 50%
+        color: white;
+        background-color: white;
+    }
+    /* END FOOTER */
+    .menu-item-photo {
+        margin-right: auto;
+    }o
+    .menu-item-tile .menu-item-price {
+        text-align: center;
+    }
+    .menu-item-description {
+        text-align: center;
+    }
+}
+
+@media (max-width: 479px) {
+    .col-xxs-12 {
+        
+    }
+}
